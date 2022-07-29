@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/cocogoose/Cocogoose-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/cocogoose/Cocogoose-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/cocogoose/Cocogoose-Ultralight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/cocogoose/Cocogoose-Ultralight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-LightItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+html,
+body {
+  font-family: "Lato";
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+html h1,
+html h5,
+html h6,
+html h8,
+html p,
+html ul,
+html li,
+body h1,
+body h5,
+body h6,
+body h8,
+body p,
+body ul,
+body li {
+  margin: 0;
+  padding: 0;
+}
+html nav,
+body nav {
+  padding: 15px;
+}
+html nav .mobile-nav-closed .hamburger i,
+body nav .mobile-nav-closed .hamburger i {
+  font-size: 60px;
+  color: black;
+}
+html .home .top-area,
+body .home .top-area {
+  padding: 15px;
+}
+html .home .top-area h5,
+body .home .top-area h5 {
+  color: #ee523c;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+html .home .top-area h1,
+body .home .top-area h1 {
+  font-weight: 900;
+  font-size: 52.5px;
+  padding-bottom: 2rem;
+}
+html .home .top-area p,
+body .home .top-area p {
+  border: 1px solid white;
+  background-color: #d3d3d3;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.8rem;
+}
+html .home .top-area h6,
+body .home .top-area h6 {
+  color: #272a31;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+html .home .top-area h8,
+body .home .top-area h8 {
+  color: #272a31;
+  font-size: 15px;
+  font-weight: light;
+  margin-left: 1rem;
+}
+html .home .main-program,
+body .home .main-program {
+  padding-top: 1.5rem;
+  background-color: lightcoral;
+  color: white;
+}
+html .home .main-program hr,
+body .home .main-program hr {
+  width: 35px;
+  border: 1px solid #ee523c;
+}
+html .home .main-program .main-program-title,
+body .home .main-program .main-program-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+html .home .main-program .program-card,
+body .home .main-program .program-card {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 25px;
+  padding: 10px;
+  gap: 5px;
+}
+html .home .main-program .program-card .icon,
+body .home .main-program .program-card .icon {
+  width: 15%;
+}
+html .home .main-program .program-card .icon img,
+body .home .main-program .program-card .icon img {
+  width: 50px;
+  height: 50px;
+}
+html .home .main-program .program-card .title,
+body .home .main-program .program-card .title {
+  width: 35%;
+  font-weight: 900;
+  color: #ee523c;
+  font-size: 18px;
+}
+html .home .main-program .program-card .description,
+body .home .main-program .program-card .description {
+  font-size: 15px;
+}
+html .home .main-program .button-container,
+body .home .main-program .button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+html .home .main-program .button-container .main-program-button,
+body .home .main-program .button-container .main-program-button {
+  height: 60px;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  font-weight: 900;
+  color: white;
+  background-color: #ee523c;
+  border: none;
+  cursor: pointer;
+}
+html .home .featured-speakers,
+body .home .featured-speakers {
+  padding-top: 3rem;
+  background-color: white;
+}
+html .home .featured-speakers .line-title,
+body .home .featured-speakers .line-title {
+  width: 35px;
+  border: 1px solid #ee523c;
+}
+html .home .featured-speakers .title,
+body .home .featured-speakers .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+html .home .featured-speakers .speaker-card,
+body .home .featured-speakers .speaker-card {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  gap: 10px;
+}
+html .home .featured-speakers .speaker-card .image-container,
+body .home .featured-speakers .speaker-card .image-container {
+  width: 30%;
+}
+html .home .featured-speakers .speaker-card .card-text,
+body .home .featured-speakers .speaker-card .card-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+html .home .featured-speakers .speaker-card .card-text .card-title,
+body .home .featured-speakers .speaker-card .card-text .card-title {
+  font-weight: 900;
+}
+html .home .featured-speakers .speaker-card .card-text .card-subtitle,
+body .home .featured-speakers .speaker-card .card-text .card-subtitle {
+  color: #ee523c;
+  font-style: italic;
+  font-weight: 900;
+}
+html .home .featured-speakers .speaker-card .card-text .line-subtitle,
+body .home .featured-speakers .speaker-card .card-text .line-subtitle {
+  margin: 10px 0 10px 0;
+  width: 10px;
+}
+html .home .featured-speakers .more-button-container,
+body .home .featured-speakers .more-button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+html .home .featured-speakers .more-button-container .more-button,
+body .home .featured-speakers .more-button-container .more-button {
+  height: 60px;
+  width: 90%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+html .home .featured-speakers .more-button-container i,
+body .home .featured-speakers .more-button-container i {
+  color: #ee523c;
+}
+
+/*# sourceMappingURL=styles.css.map */

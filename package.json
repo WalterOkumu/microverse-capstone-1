@@ -1,0 +1,24 @@
+{
+  "name": "microverse-capstone-1",
+  "version": "1.0.0",
+  "description": "HTML/CSS & JavaScript capstone project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "10.x",
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
+    "hint": "7.x",
+    "stylelint": "13.x",
+    "stylelint-config-standard": "21.x",
+    "stylelint-csstree-validator": "1.x",
+    "stylelint-scss": "3.x"
+  },
+  "dependencies": {}
+}
