@@ -45,6 +45,8 @@ html nav .mobile-nav-open,
 body nav .mobile-nav-open {
   display: none;
   background-color: #272a31;
+  z-index: 2;
+  height: 100%;
 }
 html nav .mobile-nav-open i,
 body nav .mobile-nav-open i {
@@ -437,14 +439,14 @@ body .past-summits .title p {
 }
 html .past-summits .image-area,
 body .past-summits .image-area {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 2rem;
 }
 html .past-summits .image-area .about_2011,
 body .past-summits .image-area .about_2011 {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   padding: 2rem;
   background-image: url("../../images/about_2011.png");
   background-repeat: no-repeat;
@@ -458,9 +460,6 @@ body .past-summits .image-area .about_2011:hover {
 }
 html .past-summits .image-area .about_2013,
 body .past-summits .image-area .about_2013 {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   padding: 2rem;
   background-image: url("../../images/about_2013.png");
   background-repeat: no-repeat;

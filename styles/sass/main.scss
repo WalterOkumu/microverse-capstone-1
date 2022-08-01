@@ -33,7 +33,6 @@ body {
     background-color: white;
 
     .mobile-nav-closed {
-
       .hamburger {
         i {
           font-size: 40px;
@@ -49,6 +48,8 @@ body {
     .mobile-nav-open {
       display: none;
       background-color: #272a31;
+      z-index: 2;
+      height: 100%;
 
       i {
         font-size: 20px;
@@ -456,13 +457,13 @@ body {
     }
 
     .image-area {
-      padding-left: 3rem;
-      padding-right: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      padding: 2rem;
 
       .about_2011 {
-        display: flex;
-        justify-content: center;
-        align-self: center;
         padding: 2rem;
         background-image: url('../../images/about_2011.png');
         background-repeat: no-repeat;
@@ -476,9 +477,6 @@ body {
       }
 
       .about_2013 {
-        display: flex;
-        justify-content: center;
-        align-self: center;
         padding: 2rem;
         background-image: url('../../images/about_2013.png');
         background-repeat: no-repeat;

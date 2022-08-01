@@ -2,12 +2,15 @@ function closeMenu() {
   const closeModal = document.getElementById('mobile-nav-open');
 
   closeModal.style.display = 'none';
+  document.body.style.zIndex = 1;
 }
 
 function openMenu() {
   const openModal = document.getElementById('mobile-nav-open');
 
   openModal.style.display = 'block';
+  openModal.style.zIndex = 1;
+  document.body.style.zIndex = '-1';
 }
 
 const closeMark = document.getElementById('closeMark');

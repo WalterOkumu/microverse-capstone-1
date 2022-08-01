@@ -47,28 +47,24 @@ const speakerData = [
   },
 ];
 
-const speakerSection = document.getElementById('home');
+const homeSection = document.getElementById('home');
 
-const featuredSpeakers = createDiv('featured-speakers');
+const speakerDiv = createDiv('featured-speakers');
 
 const title = createDiv('title');
-
 title.innerHTML = 'Featured Speakers';
-
-featuredSpeakers.appendChild(title);
 
 const titleHR = createHR('line-title');
 
-featuredSpeakers.appendChild(titleHR);
+speakerDiv.appendChild(title);
+speakerDiv.appendChild(titleHR);
 
-function generateCard(index) {
+function populateFeaturedSpeakers(index) {
   const speakerCard = createDiv('speaker-card');
 
   const imageContainer = createDiv('image-container');
 
   const image = createImage(speakerData[index].Image, speakerData[index].Name, 'speaker');
-
-  imageContainer.appendChild(image);
 
   const cardText = createDiv('card-text');
 
@@ -91,61 +87,65 @@ function generateCard(index) {
 
   cardText.appendChild(p);
 
+  imageContainer.appendChild(image);
+
   speakerCard.appendChild(imageContainer);
   speakerCard.appendChild(cardText);
-  featuredSpeakers.appendChild(speakerCard);
-  speakerSection.appendChild(featuredSpeakers);
+  speakerDiv.appendChild(speakerCard);
 }
 
-let speakerListLength = 1;
-
-for (let i = 0; i <= speakerListLength; i += 1) {
-  generateCard(i);
+function hideSpeakers() {
+  speakerDiv.childNodes[4].style.display = 'none';
+  speakerDiv.childNodes[5].style.display = 'none';
+  speakerDiv.childNodes[6].style.display = 'none';
+  speakerDiv.childNodes[7].style.display = 'none';
 }
 
-function populateFullList() {
-  speakerListLength = speakerData.length;
+function showSpeakers() {
+  speakerDiv.childNodes[4].style.display = '';
+  speakerDiv.childNodes[5].style.display = '';
+  speakerDiv.childNodes[6].style.display = '';
+  speakerDiv.childNodes[7].style.display = '';
+}
 
-  for (let i = 2; i < speakerListLength; i += 1) {
-    generateCard(i);
+window.onload = () => {
+  homeSection.appendChild(speakerDiv);
+
+  for (let i = 0; i < speakerData.length; i += 1) {
+    populateFeaturedSpeakers(i);
   }
-}
-const moreButtonContainer = createDiv('more-button-container');
 
-const moreButton = createButton('more-button');
+  const moreButtonContainer = createDiv('more-button-container');
 
-function addLessButton() {
+  const moreButton = createButton('more-button');
+  moreButton.innerHTML = 'MORE <i class="fa-solid fa-chevron-down"></i>';
+  moreButton.style.visibility = 'visible';
+
   const lessButtonContainer = createDiv('less-button-container');
 
   const lessButton = createButton('less-button');
-
+  lessButton.style.visibility = 'hidden';
   lessButton.innerHTML = 'LESS <i class="fa-solid fa-chevron-up"></i>';
 
-  lessButton.addEventListener('click', () => {
-    window.onclick = function (event) {
-      if (event.target.className === 'less-button') {
-        lessButton.style.display = 'none';
-        moreButton.style.display = 'block';
-      }
-    };
+  moreButton.addEventListener('click', () => {
+    showSpeakers();
+    moreButton.style.visibility = 'hidden';
+    lessButton.style.visibility = 'visible';
   });
+
+  lessButton.addEventListener('click', () => {
+    hideSpeakers();
+    lessButton.style.visibility = 'hidden';
+    moreButton.style.visibility = 'visible';
+  });
+
+  moreButtonContainer.appendChild(moreButton);
   lessButtonContainer.appendChild(lessButton);
-  featuredSpeakers.appendChild(lessButtonContainer);
-}
 
-moreButton.innerHTML = 'MORE <i class="fa-solid fa-chevron-down"></i>';
+  speakerDiv.appendChild(moreButtonContainer);
+  speakerDiv.appendChild(lessButtonContainer);
 
-moreButton.addEventListener('click', () => {
-  window.onclick = function (event) {
-    if (event.target.className === 'more-button') {
-      populateFullList();
-      moreButton.style.display = 'none';
-      addLessButton();
-    }
-  };
-});
+  // const cards = speakerDiv.children;
 
-moreButtonContainer.appendChild(moreButton);
-
-featuredSpeakers.appendChild(moreButtonContainer);
-speakerSection.appendChild(featuredSpeakers);
+  hideSpeakers();
+};
