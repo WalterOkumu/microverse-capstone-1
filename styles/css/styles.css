@@ -1,63 +1,4 @@
-@font-face {
-  font-family: "Cocogoose";
-  src: url("../fonts/cocogoose/Cocogoose-Italic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Cocogoose";
-  src: url("../fonts/cocogoose/Cocogoose-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Cocogoose";
-  src: url("../fonts/cocogoose/Cocogoose-Ultralight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Cocogoose";
-  src: url("../fonts/cocogoose/Cocogoose-Ultralight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-BoldItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-Italic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: lighter;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-LightItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 html,
 body {
   font-family: "Lato";
@@ -82,52 +23,102 @@ body li {
   margin: 0;
   padding: 0;
 }
+html a,
+body a {
+  text-decoration: none;
+}
 html nav,
 body nav {
   padding: 15px;
+  background-color: white;
 }
 html nav .mobile-nav-closed .hamburger i,
 body nav .mobile-nav-closed .hamburger i {
-  font-size: 60px;
+  font-size: 40px;
   color: black;
 }
-html .home .top-area,
-body .home .top-area {
-  padding: 15px;
+html nav .mobile-nav-closed .logo,
+body nav .mobile-nav-closed .logo {
+  margin-left: 30%;
 }
-html .home .top-area h5,
-body .home .top-area h5 {
+html nav .mobile-nav-open,
+body nav .mobile-nav-open {
+  display: none;
+  background-color: #272a31;
+}
+html nav .mobile-nav-open i,
+body nav .mobile-nav-open i {
+  font-size: 20px;
+}
+html nav .mobile-nav-open .close-mobile-nav,
+body nav .mobile-nav-open .close-mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  padding-top: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+html nav .mobile-nav-open .mobile-navbar-list .mobile-nav-items,
+body nav .mobile-nav-open .mobile-navbar-list .mobile-nav-items {
+  padding: 2rem;
+}
+html nav .mobile-nav-open .mobile-navbar-list .mobile-nav-items .nav-link,
+body nav .mobile-nav-open .mobile-navbar-list .mobile-nav-items .nav-link {
+  color: white;
+}
+html nav .mobile-nav-open .mobile-navbar-list .mobile-nav-items .nav-link:hover,
+body nav .mobile-nav-open .mobile-navbar-list .mobile-nav-items .nav-link:hover {
+  color: #ee523c;
+  transition: all 0.3s ease;
+}
+html .home .home-background,
+body .home .home-background {
+  background-image: url("../../images/mobile_intro_bg.png");
+}
+html .home .home-background .top-area,
+body .home .home-background .top-area {
+  padding: 15px;
+  z-index: 1;
+}
+html .home .home-background .top-area h5,
+body .home .home-background .top-area h5 {
   color: #ee523c;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: normal;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
 }
-html .home .top-area h1,
-body .home .top-area h1 {
+html .home .home-background .top-area h1,
+body .home .home-background .top-area h1 {
   font-weight: 900;
   font-size: 52.5px;
   padding-bottom: 2rem;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg");
 }
-html .home .top-area p,
-body .home .top-area p {
-  border: 1px solid white;
+html .home .home-background .top-area p,
+body .home .home-background .top-area p {
+  border: 5px solid white;
   background-color: #d3d3d3;
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 0.8rem;
 }
-html .home .top-area h6,
-body .home .top-area h6 {
+html .home .home-background .top-area h6,
+body .home .home-background .top-area h6 {
   color: #272a31;
   font-size: 20px;
   font-weight: bold;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
-html .home .top-area h8,
-body .home .top-area h8 {
+html .home .home-background .top-area h8,
+body .home .home-background .top-area h8 {
   color: #272a31;
   font-size: 15px;
   font-weight: light;
@@ -136,7 +127,8 @@ body .home .top-area h8 {
 html .home .main-program,
 body .home .main-program {
   padding-top: 1.5rem;
-  background-color: lightcoral;
+  background-image: url("../../images/pattern_bg.png");
+  background-color: #272a31;
   color: white;
 }
 html .home .main-program hr,
@@ -152,7 +144,7 @@ body .home .main-program .main-program-title {
 }
 html .home .main-program .program-card,
 body .home .main-program .program-card {
-  background-color: #d3d3d3;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -218,33 +210,59 @@ html .home .featured-speakers .speaker-card,
 body .home .featured-speakers .speaker-card {
   display: flex;
   flex-direction: row;
-  margin: 25px;
+  margin: 10%;
+  gap: 5%;
   gap: 10px;
 }
 html .home .featured-speakers .speaker-card .image-container,
 body .home .featured-speakers .speaker-card .image-container {
-  width: 30%;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+html .home .featured-speakers .speaker-card .image-container .speaker,
+body .home .featured-speakers .speaker-card .image-container .speaker {
+  width: 70px;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 html .home .featured-speakers .speaker-card .card-text,
 body .home .featured-speakers .speaker-card .card-text {
-  display: flex;
+  position: inherit;
+  padding: 8%;
+  left: 60%;
   flex-direction: column;
   width: 70%;
+  z-index: 1;
 }
 html .home .featured-speakers .speaker-card .card-text .card-title,
 body .home .featured-speakers .speaker-card .card-text .card-title {
+  position: inherit;
+  left: 30%;
   font-weight: 900;
+  top: 50px;
+  font-size: 15px;
 }
 html .home .featured-speakers .speaker-card .card-text .card-subtitle,
 body .home .featured-speakers .speaker-card .card-text .card-subtitle {
+  position: inherit;
   color: #ee523c;
   font-style: italic;
   font-weight: 900;
+  font-size: 10px;
 }
 html .home .featured-speakers .speaker-card .card-text .line-subtitle,
 body .home .featured-speakers .speaker-card .card-text .line-subtitle {
   margin: 10px 0 10px 0;
   width: 10px;
+}
+html .home .featured-speakers .speaker-card .card-text .card-description,
+body .home .featured-speakers .speaker-card .card-text .card-description {
+  position: absolute;
+  font-size: 10px;
 }
 html .home .featured-speakers .more-button-container,
 body .home .featured-speakers .more-button-container {
@@ -268,6 +286,236 @@ body .home .featured-speakers .more-button-container .more-button {
 html .home .featured-speakers .more-button-container i,
 body .home .featured-speakers .more-button-container i {
   color: #ee523c;
+}
+html .home .featured-speakers .less-button-container,
+body .home .featured-speakers .less-button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+html .home .featured-speakers .less-button-container .less-button,
+body .home .featured-speakers .less-button-container .less-button {
+  height: 60px;
+  width: 90%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+html .home .featured-speakers .less-button-container i,
+body .home .featured-speakers .less-button-container i {
+  color: #ee523c;
+}
+html .about .about-background,
+body .about .about-background {
+  text-align: center;
+  background-image: url("../../images/mobile_intro_bg.png");
+}
+html .about .about-background .top-area,
+body .about .about-background .top-area {
+  padding: 15px;
+  z-index: 1;
+}
+html .about .about-background .top-area h5,
+body .about .about-background .top-area h5 {
+  color: #ee523c;
+  font-size: 25px;
+  font-weight: normal;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+html .about .about-background .top-area h1,
+body .about .about-background .top-area h1 {
+  font-weight: 900;
+  font-size: 52.5px;
+  padding-bottom: 2rem;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg");
+}
+html .about .about-background .top-area .description,
+body .about .about-background .top-area .description {
+  border: 5px solid white;
+  background-color: #d3d3d3;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.8rem;
+}
+html .about .about-background .top-area h6,
+body .about .about-background .top-area h6 {
+  color: #272a31;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+html .about .about-background .top-area h8,
+body .about .about-background .top-area h8 {
+  color: #272a31;
+  font-size: 15px;
+  font-weight: light;
+  margin-left: 1rem;
+}
+html .about .contact,
+body .about .contact {
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+html .about .email,
+body .about .email {
+  font-weight: bold;
+  text-decoration: underline;
+}
+html .creative-commons,
+body .creative-commons {
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+html .creative-commons .title,
+body .creative-commons .title {
+  text-align: center;
+}
+html .creative-commons .title h5,
+body .creative-commons .title h5 {
+  font-size: 20px;
+}
+html .creative-commons .title hr,
+body .creative-commons .title hr {
+  border: 1px solid #ee523c;
+  width: 20px;
+}
+html .creative-commons .title p,
+body .creative-commons .title p {
+  font-size: 15px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+html .creative-commons .image-container,
+body .creative-commons .image-container {
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid #d3d3d3;
+}
+html .creative-commons hr,
+body .creative-commons hr {
+  border: 1px solid #d3d3d3;
+}
+html .past-summits,
+body .past-summits {
+  background-color: white;
+}
+html .past-summits .title,
+body .past-summits .title {
+  text-align: center;
+}
+html .past-summits .title h5,
+body .past-summits .title h5 {
+  font-size: 20px;
+}
+html .past-summits .title hr,
+body .past-summits .title hr {
+  border: 1px solid #ee523c;
+  width: 20px;
+}
+html .past-summits .title p,
+body .past-summits .title p {
+  font-size: 15px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+html .past-summits .image-area,
+body .past-summits .image-area {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+html .past-summits .image-area .about_2011,
+body .past-summits .image-area .about_2011 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 2rem;
+  background-image: url("../../images/about_2011.png");
+  background-repeat: no-repeat;
+  height: 12rem;
+  width: 100%;
+}
+html .past-summits .image-area .about_2011:hover,
+body .past-summits .image-area .about_2011:hover {
+  background-image: url("../../images/about_2011_hover.png");
+  cursor: pointer;
+}
+html .past-summits .image-area .about_2013,
+body .past-summits .image-area .about_2013 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 2rem;
+  background-image: url("../../images/about_2013.png");
+  background-repeat: no-repeat;
+  height: 12rem;
+  width: 100%;
+}
+html .past-summits .image-area .about_2013:hover,
+body .past-summits .image-area .about_2013:hover {
+  background-image: url("../../images/about_2013_hover.png");
+  cursor: pointer;
+}
+html .partner,
+body .partner {
+  background-color: #272a31;
+}
+html .partner .title,
+body .partner .title {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+html .partner .title h5,
+body .partner .title h5 {
+  font-size: 20px;
+}
+html .partner .title hr,
+body .partner .title hr {
+  border: 1px solid #ee523c;
+  width: 20px;
+}
+html .partner .sponsors,
+body .partner .sponsors {
+  margin: 2rem;
+}
+html .partner .sponsors img,
+body .partner .sponsors img {
+  width: 90px;
+  padding: 2rem;
+}
+html footer,
+body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 5rem;
+  padding-bottom: 1rem;
+  margin: 1rem;
+}
+html footer img,
+body footer img {
+  width: 200px;
+}
+html footer p,
+body footer p {
+  align-self: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
