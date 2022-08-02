@@ -167,8 +167,8 @@ body .home .home-background .top-area h6 {
     margin-bottom: 1rem;
     padding-top: 1rem;
   }
-  html .home .home-background .top-area h8,
-body .home .home-background .top-area h8 {
+  html .home .home-background .top-area small,
+body .home .home-background .top-area small {
     color: #272a31;
     font-size: 15px;
     font-weight: light;
@@ -722,8 +722,8 @@ body .home .home-background .top-area h6 {
     margin-bottom: 1rem;
     padding-top: 1rem;
   }
-  html .home .home-background .top-area h8,
-body .home .home-background .top-area h8 {
+  html .home .home-background .top-area small,
+body .home .home-background .top-area small {
     color: #272a31;
     font-size: 15px;
     font-weight: light;

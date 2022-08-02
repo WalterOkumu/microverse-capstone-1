@@ -3,6 +3,7 @@ $black: #272a31;
 $red: #ee523c;
 $grey: #d3d3d3;
 
+
 html,
 body {
   font-family: 'Lato';
@@ -167,7 +168,7 @@ body {
             padding-top: 1rem;
           }
 
-          h8 {
+          small {
             color: $black;
             font-size: 15px;
             font-weight: light;
@@ -742,7 +743,7 @@ body {
             padding-top: 1rem;
           }
 
-          h8 {
+          small {
             color: $black;
             font-size: 15px;
             font-weight: light;
