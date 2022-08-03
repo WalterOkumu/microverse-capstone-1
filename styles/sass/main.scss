@@ -132,9 +132,9 @@ body {
           padding: 15px;
           z-index: 1;
 
-          h5 {
+          h2 {
             color: $red;
-            font-size: 25px;
+            font-size: 40px;
             font-weight: normal;
             padding-top: 2rem;
             padding-bottom: 0.5rem;
@@ -142,12 +142,12 @@ body {
 
           h1 {
             font-weight: 900;
-            font-size: 52.5px;
+            font-size: 60px;
             padding-bottom: 2rem;
             background-clip: border-box;
             -webkit-background-clip: text;
             color: transparent;
-            background-image: url('https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg');
+            background-image: url('../../images/about_2013.png');
           }
 
           p {
@@ -574,7 +574,7 @@ body {
 
     .partner {
       background-color: $black;
-
+      display: none;
 
       .title {
         text-align: center;
@@ -614,12 +614,13 @@ body {
       margin: 10px;
 
       img {
-        width: 100px;
+        width: 80px;
         padding: 10px;
       }
 
       p {
         align-self: center;
+        padding-left: 10px;
       }
     }
   }
@@ -707,9 +708,9 @@ body {
           padding: 5rem;
           z-index: 1;
 
-          h5 {
+          h2 {
             color: $red;
-            font-size: 25px;
+            font-size: 40px;
             font-weight: normal;
             padding-top: 2rem;
             padding-bottom: 0.5rem;
@@ -717,12 +718,12 @@ body {
 
           h1 {
             font-weight: 900;
-            font-size: 52.5px;
+            font-size: 60px;
             padding-bottom: 2rem;
             background-clip: border-box;
             -webkit-background-clip: text;
             color: transparent;
-            background-image: url('https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg');
+            background-image: url('../../images/about_2013.png');
           }
 
           p {
@@ -798,15 +799,14 @@ body {
             }
 
             .title {
-              width: 35%;
               font-weight: 900;
               color: $red;
-              font-size: 15px;
+              font-size: 13px;
               font-weight: bold;
             }
 
             .description {
-              font-size: 13px;
+              font-size: 11px;
             }
           }
         }
@@ -1136,7 +1136,6 @@ body {
       }
 
       .sponsors {
-        margin: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1144,25 +1143,28 @@ body {
 
         img {
           width: 90px;
-          padding: 2rem;
+          padding: 20px;
         }
       }
     }
 
     footer {
+      background-color: $black;
       display: flex;
       flex-direction: row;
       justify-content: center;
       height: 5rem;
       padding-bottom: 1rem;
-      margin: 1rem;
+      // margin: 1rem;
 
       img {
-        width: 200px;
+        width: 110px;
       }
 
       p {
         align-self: center;
+        padding-left: 10px;
+        color: white;
       }
     }
   }

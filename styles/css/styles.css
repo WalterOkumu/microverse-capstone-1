@@ -131,10 +131,10 @@ body .home .home-background .top-area {
     padding: 15px;
     z-index: 1;
   }
-  html .home .home-background .top-area h5,
-body .home .home-background .top-area h5 {
+  html .home .home-background .top-area h2,
+body .home .home-background .top-area h2 {
     color: #ee523c;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: normal;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
@@ -142,12 +142,12 @@ body .home .home-background .top-area h5 {
   html .home .home-background .top-area h1,
 body .home .home-background .top-area h1 {
     font-weight: 900;
-    font-size: 52.5px;
+    font-size: 60px;
     padding-bottom: 2rem;
     background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: url("https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg");
+    background-image: url("../../images/about_2013.png");
   }
   html .home .home-background .top-area p,
 body .home .home-background .top-area p {
@@ -562,6 +562,7 @@ body .past-summits .image-area .event-2-overlay .event-2 {
   html .partner,
 body .partner {
     background-color: #272a31;
+    display: none;
   }
   html .partner .title,
 body .partner .title {
@@ -602,12 +603,13 @@ body footer {
   }
   html footer img,
 body footer img {
-    width: 100px;
+    width: 80px;
     padding: 10px;
   }
   html footer p,
 body footer p {
     align-self: center;
+    padding-left: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -686,10 +688,10 @@ body .home .home-background .top-area {
     padding: 5rem;
     z-index: 1;
   }
-  html .home .home-background .top-area h5,
-body .home .home-background .top-area h5 {
+  html .home .home-background .top-area h2,
+body .home .home-background .top-area h2 {
     color: #ee523c;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: normal;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
@@ -697,12 +699,12 @@ body .home .home-background .top-area h5 {
   html .home .home-background .top-area h1,
 body .home .home-background .top-area h1 {
     font-weight: 900;
-    font-size: 52.5px;
+    font-size: 60px;
     padding-bottom: 2rem;
     background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: url("https://s3.amazonaws.com/usefulangle/news/95-5f6cc1ad5575e.jpg");
+    background-image: url("../../images/about_2013.png");
   }
   html .home .home-background .top-area p,
 body .home .home-background .top-area p {
@@ -778,15 +780,14 @@ body .home .main-program .program-container .program-card .icon img {
   }
   html .home .main-program .program-container .program-card .title,
 body .home .main-program .program-container .program-card .title {
-    width: 35%;
     font-weight: 900;
     color: #ee523c;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
   }
   html .home .main-program .program-container .program-card .description,
 body .home .main-program .program-container .program-card .description {
-    font-size: 13px;
+    font-size: 11px;
   }
   html .home .main-program .button-container,
 body .home .main-program .button-container {
@@ -1107,7 +1108,6 @@ body .partner .title hr {
   }
   html .partner .sponsors,
 body .partner .sponsors {
-    margin: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1116,24 +1116,26 @@ body .partner .sponsors {
   html .partner .sponsors img,
 body .partner .sponsors img {
     width: 90px;
-    padding: 2rem;
+    padding: 20px;
   }
   html footer,
 body footer {
+    background-color: #272a31;
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 5rem;
     padding-bottom: 1rem;
-    margin: 1rem;
   }
   html footer img,
 body footer img {
-    width: 200px;
+    width: 110px;
   }
   html footer p,
 body footer p {
     align-self: center;
+    padding-left: 10px;
+    color: white;
   }
 }
 
